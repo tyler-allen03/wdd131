@@ -1,8 +1,6 @@
 :root {
     --primary-color: blueviolet;
     --secondary-color: purple;
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -12,8 +10,12 @@
 }
 
 body {
-    font-family: var(--body-font);
     line-height: 1.5;
+    font-family: "Cause", cursive;
+}
+
+header {
+    padding: 10px;
 }
 
 header,
