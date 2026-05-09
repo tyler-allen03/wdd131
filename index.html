@@ -4,11 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Tyler Allen</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Tyler Allen - This is the landing page for the wdd 131 class">
+    <meta name="author" content="Tyler Allen">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>Wdd 131 - Tyler Allen</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/jobs/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a
+                href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/84?lang=eng&id=p82#p82:~:text=82%20For%2C,unto%20every%20man.">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Tyler Allen</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="A profile image of myself, Tyler Allen">
+            <p>I was born in Idaho Falls, Idaho. Grew up in the military and so we moved around a bunch. I've lived in
+                Idaho, Alaska, Mississipi, and Missouri. I spent part of my mission serving in Orem Utah, before
+                returning home to finish as a service missionary. I currently reside in Independence Missouri serving as
+                our YSA's choir director and fill in corester. I started singing in the 3rd grade and never stopped
+                singing in choirs. I love the lord and I am ready to learn.</p>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="#">Dev.to Community</a></li>
+                <li><a href="#">Smashing Magazine</a></li>
+                <li><a href="#">CSS Tricks</a></li>
+                <li><a href="#">W3 Schools</a></li>
+                <li><a href="#">Udemy</a></li>
+                <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Tyler Allen | Missouri</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
