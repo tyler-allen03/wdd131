@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Page</title>
+    <meta name="description"
+        content="This is the country assignment place where we display a country with its local weather information.">
+    <meta name="author" content="Tyler Allen">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Alaska</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/alaska-thin.webp" media="(max-width: 700px)">
+                <img src="images/alaska-wide.webp" alt="Anchorage Alaska Landscape">
+            </picture>
+
+            <div class="data">
+                <h2>Data</h2>
+                <div class="dataset">
+                    <h3>Area:</h3>
+                    <p>663,268 sq miles</p>
+                    <h3>Population:</h3>
+                    <p>738,737</p>
+                    <h3>Capital:</h3>
+                    <p>Juneau</p>
+                    <h3>Languages:</h3>
+                    <p>English, Inuit-Unangan, Na-Dene</p>
+                    <h3>Currency:</h3>
+                    <p>USD</p>
+                    <h3>Time Zone:</h3>
+                    <p>GMT-8</p>
+                    <h3>Calling Code:</h3>
+                    <p>907</p>
+                    <h3>Internet TLD:</h3>
+                    <p>.com, .org, .net, .us, .gov</p>
+                </div>
+            </div>
+            <div class="weather">
+                <div class="weatherheader">
+                    <h2>Weather</h2>
+                    <p class="emoticon">🌦️</p>
+                </div>
+                <div class="weatherset">
+                    <h3>Temperature:</h3>
+                    <p>44°F</p>
+                    <h3>Conditions:</h3>
+                    <p>Light Rain</p>
+                    <h3>Wind:</h3>
+                    <p>3 mph</p>
+                    <h3>Wind Chill:</h3>
+                    <p id="chillValue">tempNumber</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Tyler Allen | Missouri</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

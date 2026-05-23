@@ -1,0 +1,238 @@
+:root {
+    --flag-color-one: navy;
+    --flag-color-two: gold;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "Cause", cursive;
+    padding: 0;
+}
+
+
+/* ////////////// MOBILE ///////////// */
+@media screen and (max-width: 700px) {
+
+    header,
+    main,
+    footer {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    header {
+        background-color: var(--flag-color-one);
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    header h1 {
+        color: var(--flag-color-two);
+        padding: 5px 0;
+    }
+
+    .hero img {
+        width: 500px;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .data h2 {
+        text-align: center;
+    }
+
+    .dataset {
+        display: grid;
+    }
+
+    .dataset h3 {
+        grid-column: 1;
+        margin: 0;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .dataset p {
+        grid-column: 2;
+        justify-content: left;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .emoticon {
+        font-size: 0;
+        /* Hides the original ":)" */
+        display: block;
+        width: 150px;
+        height: 150px;
+    }
+
+    .emoticon::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url("/images/weather-icon.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .weather h2 {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .weather p {
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+
+    .weatherset {
+        display: grid;
+    }
+
+    .weatherset h3 {
+        grid-column: 1;
+        margin: 0;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .weatherset p {
+        grid-column: 2;
+        justify-content: left;
+        padding: 5px;
+        margin: 0;
+    }
+
+    footer {
+        background-color: var(--flag-color-one);
+        color: var(--flag-color-two);
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 5px 0;
+    }
+}
+
+
+/* ///////////// COMPUTER /////////// */
+@media screen and (min-width: 701px) {
+
+    header,
+    main,
+    footer {
+        width: 1040px;
+        margin: 0 auto;
+    }
+
+    header,
+    footer {
+        background-color: var(--flag-color-one);
+        color: var(--flag-color-two);
+        text-align: center;
+    }
+
+    header h1 {
+        padding: 5px 0;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero img {
+        width: 1040px;
+        height: auto;
+    }
+
+    .data {
+        border: 1px black solid;
+        width: 400px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        background-color: white;
+        opacity: .8;
+        box-shadow: 10px 10px 5px grey;
+    }
+
+    .data h2 {
+        text-align: center;
+        background-color: var(--flag-color-one);
+        color: var(--flag-color-two);
+        margin: 10px;
+    }
+
+    .dataset {
+        display: grid;
+    }
+
+    .dataset h3 {
+        grid-column: 1;
+        margin: 0;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .dataset p {
+        grid-column: 2;
+        justify-content: left;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .weather {
+        border: 1px solid black;
+        width: 250px;
+        position: absolute;
+        background-color: white;
+        right: 30px;
+        top: 450px;
+        opacity: .8;
+        box-shadow: 10px 10px 5px black;
+    }
+
+    .weatherheader h2 {
+        text-align: center;
+    }
+
+    .emoticon {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .weatherheader {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .weatherset p {
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+
+    .weatherset {
+        display: grid;
+    }
+
+    .weatherset h3 {
+        grid-column: 1;
+        margin: 0;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    .weatherset p {
+        grid-column: 2;
+        justify-content: left;
+        padding: 5px;
+        margin: 0;
+    }
+}
