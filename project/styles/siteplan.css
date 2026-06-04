@@ -1,0 +1,54 @@
+:root {
+    --colorPurple: blueviolet;
+    --colorBlue: darkBlue;
+    --colorYellow: lightYellow;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "Cause", cursive;
+    background-color: var(--colorYellow);
+}
+
+header, main, footer {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: var(--colorPurple);
+    color: white;
+}
+
+header h1, header p {
+    text-align: center;
+    margin: 0;
+    padding: .5rem;
+}
+
+footer p {
+    text-align: center;
+    padding: .5rem;
+}
+
+body section {
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 6px;
+    margin: 1rem;
+}
+
+h2, h3 {
+    color: var(--colorBlue);
+}
+
+body section h2, body section h3, body section p {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+body section img {
+    max-width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
