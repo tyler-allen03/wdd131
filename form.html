@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Product Review</h1>
@@ -18,52 +19,61 @@
     <main>
         <form action="review.html" method="get">
 
-            <label>
-                <p>Product Name*</p>
-                <select name="product" id="product-name" required>
-                    <option value="" disabled selected>Select a product...</option>
-                </select>
-            </label>
+            <label for="product-name">Product Name*</label>
+            <select name="product" id="product-name" required>
+                <option value="" disabled selected>Select a product...</option>
+            </select>
 
-            <p>Overall Rating*</p>
+            Overall Rating*
             <div class="rating-box">
-                <label class="rating-option"><input type="radio" name="overall-rating" id="oneStar" value="oneStar"
-                        required>&star;</label>
-                <label class="rating-option"><input type="radio" name="overall-rating" id="twoStar" value="twoStar"
-                        required>&star;&star;</label>
-                <label class="rating-option"><input type="radio" name="overall-rating" id="threeStar" value="threeStar"
-                        required>&star;&star;&star;</label>
-                <label class="rating-option"><input type="radio" name="overall-rating" id="fourStar" value="fourStar"
-                        required>&star;&star;&star;&star;</label>
-                <label class="rating-option"><input type="radio" name="overall-rating" id="fiveStar" value="fiveStar"
-                        required>&star;&star;&star;&star;&star;</label>
+                <div class="rating-item">
+                    <label for="oneStar" class="rating-option">&star;</label>
+                    <input type="radio" name="overall-rating" id="oneStar" value="oneStar" required>
+                </div>
+                <div class="rating-item"><label for="twoStar" class="rating-option">&star;&star;</label>
+                    <input type="radio" name="overall-rating" id="twoStar" value="twoStar" required>
+                </div>
+                <div class="rating-item"><label for="threeStar" class="rating-option">&star;&star;&star;</label>
+                    <input type="radio" name="overall-rating" id="threeStar" value="threeStar" required>
+                </div>
+                <div class="rating-item"><label for="fourStar" class="rating-option">&star;&star;&star;&star;</label>
+                    <input type="radio" name="overall-rating" id="fourStar" value="fourStar" required>
+                </div>
+                <div class="rating-item"><label for="fiveStar" class="rating-option">&star;&star;&star;&star;&star;</label>
+                    <input type="radio" name="overall-rating" id="fiveStar" value="fiveStar" required>
+                </div>
             </div>
 
-            <label>
-                <p>Date of Instalation*</p>
-                <input type="date" id="installed-date" name="installed-date" required>
-            </label>
+            <label for="installed-date">Date of Instalation*</label>
+            <input type="date" id="installed-date" name="installed-date" required>
 
-            <p>Which features did you find useful in the product?</p>
-            <p class="specialCase"><i>(Check all that apply)</i></p>
+            Which features did you find useful in the product?
+            <i>(Check all that apply)</i>
             <div class="feat-box">
-                <label><input type="checkbox" id="durable-check" name="durable-check" value="yes"> Durability</label>
-                <label><input type="checkbox" id="ease-check" name="ease-check" value="yes"> Ease of Use</label>
-                <label><input type="checkbox" id="performance-check" name="performance-check" value="yes">
-                    Performance</label>
-                <label><input type="checkbox" id="design-check" name="design-check" value="yes"> Design</label>
+                <div class="feat-item">
+                    <input type="checkbox" id="durable-check" name="durable-check" value="yes">
+                    <label for="durable-check">Durability</label>
+                </div>
+                <div class="feat-item">
+                    <input type="checkbox" id="ease-check" name="ease-check" value="yes">
+                    <label for="ease-check"> Ease of Use</label>
+                </div>
+                <div class="feat-item">
+                    <input type="checkbox" id="performance-check" name="performance-check" value="yes">
+                    <label for="performance-check">Performance</label>
+                </div>
+                <div class="feat-item">
+                    <input type="checkbox" id="design-check" name="design-check" value="yes">
+                    <label for="design-check">Design</label>
+                </div>
             </div>
 
-            <label>
-                <p>Written Review <span class="optional-tag">(optional)</span></p>
-                <textarea name="written-review" id="written-review" rows="5" cols="50"
+            <label for="written-review">Written Review <span class="optional-tag">(optional)</span></label>
+            <textarea name="written-review" id="written-review" rows="5" cols="50"
                     placeholder="Write your review here"></textarea>
-            </label>
 
-            <label>
-                <p>Your Name <span class="optional-tag">(optional)</span></p>
-                <input type="text" id="userName" name="userName" placeholder="John Smith">
-            </label>
+            <label for="userName">Your Name <span class="optional-tag">(optional)</span></label>
+            <input type="text" id="userName" name="userName" placeholder="John Smith">
 
             <input type="submit" id="submitBtn" value="Post My Review">
         </form>

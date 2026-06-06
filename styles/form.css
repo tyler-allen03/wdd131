@@ -34,7 +34,13 @@ form textarea,
 form input[type="text"],
 form input[type="submit"],
 form p {
+    display: block;
     margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+form input[type="radio"] {
+    margin-bottom: 1rem;
 }
 
 form input[type="date"],
@@ -46,23 +52,11 @@ form input[type="text"] {
     
 }
 
-form p {
-    margin-bottom: 0;
-}
-
-.specialCase {
-    margin-top: 0;
-}
-
 form input[type="submit"] {
     display: block;
     width: 428px;
     padding: 1rem;
     margin-top: 1rem;
-}
-
-form label {
-    display: block;
 }
 
 .rating-box {
@@ -91,11 +85,25 @@ form input[type="checkbox"] {
     flex-direction: column;
 }
 
-.feat-box label {
-    width: 200px;
+.feat-item {
+    display: flex;
+    flex-direction: row;
 }
+
+/* .feat-box label {
+    width: 200px;
+} */
 
 .optional-tag {
     font-style: italic;
     color: blue;
+}
+
+form label {
+    display: block;
+    /* margin-left: 1rem; */
+}
+
+.rating-item {
+    text-align: center;
 }
