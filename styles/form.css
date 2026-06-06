@@ -1,0 +1,101 @@
+:root {
+    --primary-color: blueviolet;
+    --secondary-color: lightyellow;
+}
+
+header, main, footer, form {
+    margin: 0 auto;
+    max-width: 650px;
+    min-width: 450px;
+    font-size: 1.2rem;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    max-width: 630px;
+    min-width: 450px;
+    padding: 1rem;
+    border: solid 1px black;
+    background-color: var(--secondary-color);
+}
+
+form input[type="checkbox"],
+form input[type="date"],
+form select,
+form textarea,
+form input[type="text"],
+form input[type="submit"],
+form p {
+    margin-left: 1rem;
+}
+
+form input[type="date"],
+form select,
+form textarea,
+form input[type="text"] {
+    width: 400px;
+    padding: .75rem;
+    
+}
+
+form p {
+    margin-bottom: 0;
+}
+
+.specialCase {
+    margin-top: 0;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 428px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+form label {
+    display: block;
+}
+
+.rating-box {
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 2rem; */
+}
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+form input[type="radio"] {
+    transform: scale(1.5);
+}
+
+form input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+}
+
+.feat-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.feat-box label {
+    width: 200px;
+}
+
+.optional-tag {
+    font-style: italic;
+    color: blue;
+}

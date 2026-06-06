@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="This is the Product Review Form for the WDD131 assignment.">
+    <meta name="author" content="Tyler Allen">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+
+            <label>
+                <p>Product Name*</p>
+                <select name="product" id="product-name" required>
+                    <option value="" disabled selected>Select a product...</option>
+                </select>
+            </label>
+
+            <p>Overall Rating*</p>
+            <div class="rating-box">
+                <label class="rating-option"><input type="radio" name="overall-rating" id="oneStar" value="oneStar"
+                        required>&star;</label>
+                <label class="rating-option"><input type="radio" name="overall-rating" id="twoStar" value="twoStar"
+                        required>&star;&star;</label>
+                <label class="rating-option"><input type="radio" name="overall-rating" id="threeStar" value="threeStar"
+                        required>&star;&star;&star;</label>
+                <label class="rating-option"><input type="radio" name="overall-rating" id="fourStar" value="fourStar"
+                        required>&star;&star;&star;&star;</label>
+                <label class="rating-option"><input type="radio" name="overall-rating" id="fiveStar" value="fiveStar"
+                        required>&star;&star;&star;&star;&star;</label>
+            </div>
+
+            <label>
+                <p>Date of Instalation*</p>
+                <input type="date" id="installed-date" name="installed-date" required>
+            </label>
+
+            <p>Which features did you find useful in the product?</p>
+            <p class="specialCase"><i>(Check all that apply)</i></p>
+            <div class="feat-box">
+                <label><input type="checkbox" id="durable-check" name="durable-check" value="yes"> Durability</label>
+                <label><input type="checkbox" id="ease-check" name="ease-check" value="yes"> Ease of Use</label>
+                <label><input type="checkbox" id="performance-check" name="performance-check" value="yes">
+                    Performance</label>
+                <label><input type="checkbox" id="design-check" name="design-check" value="yes"> Design</label>
+            </div>
+
+            <label>
+                <p>Written Review <span class="optional-tag">(optional)</span></p>
+                <textarea name="written-review" id="written-review" rows="5" cols="50"
+                    placeholder="Write your review here"></textarea>
+            </label>
+
+            <label>
+                <p>Your Name <span class="optional-tag">(optional)</span></p>
+                <input type="text" id="userName" name="userName" placeholder="John Smith">
+            </label>
+
+            <input type="submit" id="submitBtn" value="Post My Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Tyler Allen | Missouri</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
