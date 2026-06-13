@@ -58,12 +58,16 @@ function getFormInfo() {
     return JSON.parse(localStorage.getItem("completedForm"));
 }
 
-let information = getFormInfo();
-let firstNameSub = information["fName"];
-let lastNameSub = information["lName"];
-
 const element = document.querySelector("#userName");
 
 if (element) {
+
+    let information = getFormInfo();
+    let firstNameSub = information["fName"];
+    let lastNameSub = information["lName"];
+
+
+
+
     let named = document.getElementById("userName").textContent = `${firstNameSub} ${lastNameSub}`;
 }
