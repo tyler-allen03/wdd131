@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The New Jerusalem - Zion</title>
+    <meta name="description"
+        content="This page is a form page where users can input some information to acquire more information about Zion.">
+    <meta name="author" content="Tyler Allen">
+
+    <link rel="stylesheet" href="styles/zion.css">
+    <script src="scripts/zion.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>The New Jerusalem - Zion</h1>
+            <p>Learn more of Zion and how you can contribute to it!</p>
+        </div>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="form.html">Learn More</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Want to Learn More?</h2>
+            <p>To learn even more about Zion or even add to the Zion Story, please fill out this short form! Thank You!
+            </p>
+        </section>
+        <section>
+            <form action="thanks.html" method="get" class="mainForm" id="mainForm">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <label for="fName">First Name*</label>
+                    <input type="text" name="fName" id="fName" required>
+                    <label for="lName">Last Name*</label>
+                    <input type="text" name="lName" id="lName" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <div>How would you like to be contacted?*</div>
+                    <div>
+                        <input type="radio" name="contacted" id="phone" value="tel" required>
+                        <label for="phone">Phone call</label>
+                    </div>
+                    <div><input type="radio" name="contacted" id="texted" value="tel" required>
+                        <label for="texted">Text</label>
+                    </div>
+                    <div><input type="radio" name="contacted" id="emailed" value="email" required>
+                        <label for="emailed">Email</label>
+                    </div>
+                    <div><input type="radio" name="contacted" id="noContact" value="text" required>
+                        <label for="noContact">No Thank You</label>
+                    </div>
+
+                    <label for="contactInfo">Please enter your chosen Contact method here!</label>
+                    <input type="tel" name="contactInfo" id="contactInfo" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Story</legend>
+                    <div>Have a story you want to add to the Zion Story? Please share it here!</div>
+                    <textarea name="story" id="story" rows="6" cols="50"></textarea>
+                </fieldset>
+                <button type="submit" id="submitBTN">Share My Story</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Tyler Allen | Missouri</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

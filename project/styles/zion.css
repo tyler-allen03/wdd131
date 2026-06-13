@@ -1,0 +1,247 @@
+:root {
+    --colorPurple: blueviolet;
+    --colorDarkPurple: purple;
+    --colorBlue: darkBlue;
+    --colorYellow: lightYellow;
+}
+
+
+h1 {
+    font-size: x-large;
+}
+
+
+body {
+    line-height: 1.5;
+    font-family: "Cause", cursive;
+    background-color: var(--colorYellow);
+}
+
+header,
+main,
+footer {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: var(--colorPurple);
+    color: white;
+}
+
+header h1,
+header p {
+    text-align: center;
+    margin: 0;
+    padding: .5rem;
+}
+
+footer p {
+    text-align: center;
+    padding: .5rem;
+}
+
+body section {
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 6px;
+    margin: 1rem;
+}
+
+h2,
+h3 {
+    color: var(--colorBlue);
+    text-align: center;
+}
+
+body section h2,
+body section h3,
+body section p {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.hero h2 {
+    position: absolute;
+    bottom: 1rem;
+    padding: 1rem;
+    background-color: white;
+    opacity: 80%;
+    border-radius: 25px;
+}
+
+.sideImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sideImage h3 {
+    position: absolute;
+    bottom: 1rem;
+    right: 4rem;
+    padding: 1rem;
+    background-color: white;
+    opacity: 80%;
+    border-radius: 25px;
+}
+
+body img {
+    max-width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+nav {
+    background-color: var(--colorDarkPurple);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+
+.firstVision {
+    font-style: italic;
+    font-weight: bold;
+    font-size: large;
+}
+
+.visionPhoto {
+    padding: 1rem;
+    float: right;
+    width: 300px;
+    height: auto;
+}
+
+.spiralTemple {
+    float: left;
+    padding: 1rem;
+    width: 200px;
+    height: auto;
+}
+
+.mainForm fieldset {
+    margin: 1rem;
+}
+
+.mainForm input{
+    margin-bottom: 1rem;
+}
+
+.mainForm input[type="text"],
+#contactInfo, textarea {
+    display: block;
+    font-size: large;
+    padding: .5rem;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 6px;
+}
+
+.mainForm input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+.mainForm button {
+    font-size: larger;
+    padding: 1rem;
+    width: 90%;
+    max-width: 300px;
+    margin-left: 5%;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 412px) {
+    .hero h2 {
+        font-size: medium;
+    }
+
+    .spiralTemple,
+    .visionPhoto {
+        width: 90%;
+    }
+
+    /* navigation menu things*/
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "❌";
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    .navigation a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .navigation a:hover {
+        background-color: #bbb;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .open a {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 413px) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: grid;
+    }
+
+    header nav {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: space-around;
+    }
+}
